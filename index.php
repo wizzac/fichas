@@ -1,16 +1,43 @@
 <!DOCTYPE HTML>
-<!--
-	Hielo by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
+
 <html>
+
+<?php
+session_start();
+
+include("header.php");
+$GLOBALS['ip'] = '127.0.0.1';
+$GLOBALS['user'] = 'root';
+$GLOBALS['pass'] = '';
+$GLOBALS['base'] = 'fichas';
+
+
+
+	if (isset($_COOKIE['logged'])) {
+        if($_COOKIE['logged']==true){
+            $usuario=$_COOKIE['usuarioId'];
+            $mysqli = new mysqli($GLOBALS['ip'], $GLOBALS['user'], $GLOBALS['pass'], $GLOBALS['base']);
+            $sql = "select * from sec_usuario where estado=1 and id='$usuario';";
+            $resultado=$mysqli->query($sql);
+            foreach($resultado as $registro){
+                header("Location: ./login.php");
+
+            }
+        }
+
+    }else{
+    }
+
+?>
+
+
 <head>
 	<title>Hielo by TEMPLATED</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="assets/css/login.css" />
+
+
+
 </head>
 <body style='background-image: url("images/slide05.jpg");'>
 <section class="full login">
@@ -18,6 +45,7 @@
 		<header class="align-center">
 			<h2>Login</h2>
 		</header>
+
 		<div class="login-page">
 			<div class="form">
 				<form class="login-form">
@@ -27,16 +55,13 @@
 				</form>
 			</div>
 		</div>
+
 	</div>
 </section>
 
 
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/skel.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
+
+
 
 </body>
 </html>
