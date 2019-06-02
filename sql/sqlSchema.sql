@@ -6,12 +6,12 @@ CREATE TABLE `pacientes` (
 	`estado` INT NOT NULL DEFAULT '1',
 	`fecha_nac` DATE NOT NULL,
 	`usuario_id` INT NOT NULL,
-	`foto` VARCHAR(255),
+	`foto` VARCHAR(500),
 	`dni` VARCHAR(255),
-	`telefono` VARCHAR(255),
 	`referencia` VARCHAR(255),
-	`notas` VARCHAR(255),
+	`notas` VARCHAR(2000),
 	`direccion` VARCHAR(255),
+	`telefono` VARCHAR(255),
 	`telefono2` VARCHAR(255),
 	PRIMARY KEY (`id`)
 );
@@ -19,7 +19,7 @@ CREATE TABLE `pacientes` (
 CREATE TABLE `consultas` (
 	`id` INT NOT NULL AUTO_INCREMENT,
 	`paciente_id` INT,
-	`nota` VARCHAR(255),
+	`nota` VARCHAR(3000),
 	`creado` DATE NOT NULL,
 	`usuario_id` INT NOT NULL,
 	`tipo_consulta` VARCHAR(255),

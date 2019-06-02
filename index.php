@@ -6,21 +6,19 @@
 session_start();
 
 include("header.php");
-$GLOBALS['ip'] = '127.0.0.1';
-$GLOBALS['user'] = 'root';
-$GLOBALS['pass'] = '';
-$GLOBALS['base'] = 'fichas';
+
+
 
 
 
 	if (isset($_COOKIE['logged'])) {
         if($_COOKIE['logged']==true){
             $usuario=$_COOKIE['usuarioId'];
-            $mysqli = new mysqli($GLOBALS['ip'], $GLOBALS['user'], $GLOBALS['pass'], $GLOBALS['base']);
+            $mysqli = new mysqli($ip, $userBase, $passBase, $nombreBase);
             $sql = "select * from sec_usuario where estado=1 and id='$usuario';";
             $resultado=$mysqli->query($sql);
             foreach($resultado as $registro){
-                header("Location: ./login.php");
+                header("Location:./login.php");
 
             }
         }
@@ -48,9 +46,9 @@ $GLOBALS['base'] = 'fichas';
 
 		<div class="login-page">
 			<div class="form">
-				<form class="login-form">
-					<input type="text" placeholder="Usuario"/>
-					<input type="password" placeholder="Password"/>
+				<form class="login-form" method="post" action="./sql/validarUsuario.php">
+					<input type="text" name="user" placeholder="Usuario" required/>
+					<input type="password" name="pass" placeholder="Password" required/>
 					<button type="submit" style="text-align: center">Login</button>
 				</form>
 			</div>
