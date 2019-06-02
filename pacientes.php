@@ -12,6 +12,11 @@ include("header.php");
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 </head>
+<style>
+    .hov{
+        cursor: pointer;
+    }
+</style>
 <body>
 
 <!-- Header -->
@@ -62,15 +67,12 @@ include("header.php");
 
                     <?php
 
-
                         $mysqli = new mysqli($ip, $userBase, $passBase, $nombreBase);
                         if ($mysqli->connect_errno) {
                             echo '<script>alert("Lo sentimos, este sitio web est&aacute; experimentando problemas.")</script>';
                             exit;
                         }
-
                         $sql = "select * from pacientes where estado=1";
-
                         $resultado=$mysqli->query($sql);
                         foreach($resultado as $registro){
                             $registro['nombre'];
@@ -84,18 +86,44 @@ include("header.php");
                                     $('#link_ver$registro[id]').click(function(){
                                             $('#form_ver$registro[id]').submit();
                                     });
-                                    </script>
-						        
+                                </script> 
 						        
 						        <td>$registro[telefono]</td>
-						        <td><i class='fa fa-pencil'></i></td>
-						        <td><i class='fa fa-times'></i></td>
+						     
+						        <td id='btnedit$registro[id]' class='hov'>
+						            <form id='form_edit$registro[id]' method='post' action='./editPaciente.php'>
+						                <i class='fa fa-pencil'></i>
+						                <input type='hidden' name='id' value='$registro[id]'/>
+						            </form>
+						        </td>
+						        
+						        <script>
+                                   $('#btnedit$registro[id]').click(function(){
+                                       $('#form_edit$registro[id]').submit();
+                                   });
+                                </script>
+						        
+						        
+						        <td id='btndel$registro[id]' class='hov'>
+						            <form id='form_del$registro[id]' method='post' action='./sql/deletePaciente.php'>
+						                <i class='fa fa-times'></i>
+						                <input type='hidden' name='id' value='$registro[id]'/>
+						                <input type='hidden' name='location' value='../pacientes.php'/>
+						            </form>
+						        </td>
+						        
+						        <script>
+                                   $('#btndel$registro[id]').click(function(){
+                                       if (confirm(\"Esta Seguro que desesa eliminar?\") == true) {
+                                       $('#form_del$registro[id]').submit();
+                                    }
+                                   });
+                                </script>
+						        
+						        
 					        </tr>";
                         }
                     ?>
-
-
-
 
 					</tbody>
 				</table>

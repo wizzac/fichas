@@ -25,9 +25,9 @@
 <!-- Nav -->
 <nav id="menu">
 	<ul class="links">
-		<li><a href="login.html">Home</a></li>
-		<li><a href="pacientes.html">Pacientes</a></li>
-		<li><a href="consultas.html">Consultas</a></li>
+		<li><a href="login.php">Home</a></li>
+		<li><a href="pacientes.php">Pacientes</a></li>
+		<li><a href="consultas.php">Consultas</a></li>
 	</ul>
 </nav>
 
@@ -52,35 +52,73 @@
 				
 
 
-				<form action="/crearPaciente.sql">
-					<button type="">Cargar Foto</button>  ¿Foto aqui?
+				<form action="./sql/insertPaciente.php" method="post" enctype='multipart/form-data'>
+
 					<div class="row">
-						<div class="col-md-8">
-							<label>Referencia: <input type="text" class="form-control" name="referencia" placeholder="Referente"></label></div>
+						<input type="file" name="foto">
 					</div>
+					<br>
+
 					<div class="row">
-						<div class="col-md-4">
-							<label>Nombre: <input type="text" class="form-control" name="nombre" placeholder="Nombre"></label></div>
-						<div class="col-md-4">
-							<label>Apellido: <input type="text" class="form-control" name="apellido" placeholder="Apellido"></label></div>
+						<div class="col-md-6">
+							<label>Nombre:</label>
+							<input type="text" class="form-control" name="nombre" placeholder="Nombre">
+						</div>
+						<div class="col-md-6">
+							<label>Apellido:</label>
+							<input type="text" class="form-control" name="apellido" placeholder="Apellido">
+						</div>
 					</div>
+					<br>
+
 					<div class="row">
-						<div class="col-md-4">
-							<label>DNI: <input type="text" class="form-control" name="dni" placeholder="DNI"></label></div>
-						<div class="col-md-4">
-							<label>Fecha de Nacimiento: <input type="date" class="form-control" name="fecha_nac"></label></div>
+						<div class="col-md-6">
+							<label>DNI:</label>
+							<input type="text" class="form-control" name="dni" placeholder="DNI">
+						</div>
+						<div class="col-md-6">
+							<label>Fecha de Nacimiento:</label>
+							<input type="date" class="form-control" name="fecha_nac">
+						</div>
 					</div>
+					<br>
+
 					<div class="row">
-						<div class="col-md-4">
-							<label>Telefono: <input type="text" class="form-control" name="telefono" placeholder="Apellido"></label></div>
-						<div class="col-md-4">
-							<label>Telefono 2: <input type="text" class="form-control" name="telefono2" placeholder="Apellido"></label></div>
+						<div class="col-md-6">
+							<label>Telefono: </label>
+							<input type="text" class="form-control" name="telefono" placeholder="Telefono">
+						</div>
+						<div class="col-md-6">
+							<label>Telefono 2: </label>
+							<input type="text" class="form-control" name="telefono2" placeholder="Telefono2">
+						</div>
 					</div>
+					<br>
+
 					<div class="row">
-						<div class="col-md-8">
-							<label>Direccion</label> <input type="text" class="form-control" name="apellido" placeholder="Apellido"></div>
+						<div class="col-md-6">
+							<label>Direccion</label> <input type="text" class="form-control" name="direccion" placeholder="Direccion">
+						</div>
+
+						<div class="col-md-6">
+							<label>Referencia: </label>
+							<input type="text" class="form-control" name="referencia" placeholder="Referente">
+						</div>
 					</div>
-					<button type="submit">Crear</button>
+					<br>
+
+					<div class="row">
+						<div class="col-md-12">
+							<label>Notas: </label>
+							<textarea name="notas"></textarea>
+						</div>
+					</div>
+
+					<input type="hidden" name="location" value="../pacientes.php">
+					<br>
+						<button type="submit" class="pull-right" name="submit">Crear</button>
+					<br>
+
 				</form>
 
 			</div>

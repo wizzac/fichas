@@ -72,7 +72,10 @@ if(isset($_POST['id'])){
         <div class="box">
             <div class="content container">
                 <div class="row">
+                    <img style="max-height: 200px;max-width: 200px" src="./perfiles/<?php  echo($registro['foto'])?>"/>
+                </div>
 
+                <div class="row">
                     <div class="col-md-6">
                         <label>Nombre:</label>
                         <input type="text" class="form-control" name="nombre" placeholder="Nombre" value="<?php  echo($registro['nombre']);?>" disabled>
@@ -115,7 +118,7 @@ if(isset($_POST['id'])){
                         <input type="text" class="form-control" name="referencia" placeholder="Referente" value="<?php  echo($registro['referencia']);?>" disabled>
                     </div>
                 </div>
-                
+
                 <div class="row">
                     <div class="col-md-12">
                         <label>Notas: </label>
