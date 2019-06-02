@@ -24,7 +24,7 @@ include("header.php");
 	<ul class="links">
 		<li><a href="login.php">Home</a></li>
 		<li><a href="pacientes.php">Pacientes</a></li>
-		<li><a href="consultas.php">Consultas</a></li>
+		<li><a href="./consultas.php">Consultas</a></li>
 	</ul>
 </nav>
 
@@ -59,18 +59,44 @@ include("header.php");
 					<td>Eliminar</td>
 					</thead>
 					<tbody>
-					<tr>
-						<td>Prueba ased</td>
-						<td>444444</td>
-						<td>boton</td>
-						<td>boton</td>
-					</tr>
-					<tr>
-						<td>Prueba ased</td>
-						<td>444444</td>
-						<td>boton</td>
-						<td>boton</td>
-					</tr>
+
+                    <?php
+
+
+                        $mysqli = new mysqli($ip, $userBase, $passBase, $nombreBase);
+                        if ($mysqli->connect_errno) {
+                            echo '<script>alert("Lo sentimos, este sitio web est&aacute; experimentando problemas.")</script>';
+                            exit;
+                        }
+
+                        $sql = "select * from pacientes where estado=1";
+
+                        $resultado=$mysqli->query($sql);
+                        foreach($resultado as $registro){
+                            $registro['nombre'];
+                            echo "<tr>
+                                <form id='form_ver$registro[id]' method='post' action='verPaciente.php'>
+                                   <input type='hidden' name='id' value='$registro[id]' />
+						           <td><a id='link_ver$registro[id]' href='#'>$registro[nombre] $registro[apellido]</a> </td>
+						        </form>
+						        <script>
+						        
+                                    $('#link_ver$registro[id]').click(function(){
+                                            $('#form_ver$registro[id]').submit();
+                                    });
+                                    </script>
+						        
+						        
+						        <td>$registro[telefono]</td>
+						        <td><i class='fa fa-pencil'></i></td>
+						        <td><i class='fa fa-times'></i></td>
+					        </tr>";
+                        }
+                    ?>
+
+
+
+
 					</tbody>
 				</table>
 			</div>
@@ -95,4 +121,10 @@ include("header.php");
 
 
 </body>
+
+
+
+<script>
+
+</script>
 </html>
