@@ -22,9 +22,9 @@ include("header.php");
 <!-- Nav -->
 <nav id="menu">
 	<ul class="links">
-		<li><a href="login.html">Home</a></li>
-		<li><a href="pacientes.html">Pacientes</a></li>
-		<li><a href="consultas.html">Consultas</a></li>
+		<li><a href="login.php">Home</a></li>
+		<li><a href="pacientes.php">Pacientes</a></li>
+		<li><a href="consultas.php">Consultas</a></li>
 	</ul>
 </nav>
 
@@ -32,7 +32,6 @@ include("header.php");
 <section id="One" class="wrapper style3">
 	<div class="inner">
 		<header class="align-center">
-			<!--<p>Send nudes</p>-->
 			<h2>Pacientes</h2>
 		</header>
 	</div>
@@ -46,7 +45,13 @@ include("header.php");
 				<header class="align-center">
 					<p class="tit-color">Lista de pacientes</p>
 				</header>
-				<table>
+            <div class="row">
+                <a href="./crearPaciente.html" class="button btn ">Crear Nuevo</a>
+
+                <br>
+            </div>
+                <br>
+                <table>
 					<thead>
 					<td>Nombre / Apellido</td>
 					<td>Telefono</td>

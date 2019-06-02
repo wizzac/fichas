@@ -27,9 +27,9 @@ include("header.php");
 		<!-- Nav -->
 			<nav id="menu">
 				<ul class="links">
-					<li><a href="login.html">Home</a></li>
-					<li><a href="pacientes.html">Pacientes</a></li>
-					<li><a href="consultas.html">Consultas</a></li>
+					<li><a href="login.php">Home</a></li>
+					<li><a href="pacientes.php">Pacientes</a></li>
+					<li><a href="consultas.php">Consultas</a></li>
 				</ul>
 			</nav>
 

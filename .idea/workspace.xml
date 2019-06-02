@@ -3,12 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="0544bcec-e06c-4a85-bf19-71ae46bb3f86" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consultas.php" afterPath="$PROJECT_DIR$/consultas.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crearPaciente.html" afterPath="$PROJECT_DIR$/crearPaciente.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.php" afterPath="$PROJECT_DIR$/header.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pacientes.php" afterPath="$PROJECT_DIR$/pacientes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql/deleteConsulta.php" afterPath="$PROJECT_DIR$/sql/deleteConsulta.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql/deletePaciente.php" afterPath="$PROJECT_DIR$/sql/deletePaciente.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql/insertConsulta.php" afterPath="$PROJECT_DIR$/sql/insertConsulta.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql/insertPaciente.php" afterPath="$PROJECT_DIR$/sql/insertPaciente.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql/sqlSchema.sql" afterPath="$PROJECT_DIR$/sql/sqlSchema.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql/validarUsuario.php" afterPath="$PROJECT_DIR$/sql/validarUsuario.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql/updateConsulta.php" afterPath="$PROJECT_DIR$/sql/updateConsulta.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql/updatePaciente.php" afterPath="$PROJECT_DIR$/sql/updatePaciente.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,76 +24,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.php">
+      <file leaf-file-name="updatePaciente.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql/updatePaciente.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" column="43" lean-forward="true" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+            <state relative-caret-position="777">
+              <caret line="64" column="32" lean-forward="false" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
               <folding>
-                <marker date="1559444927237" expanded="true" signature="287:345" ph="select * fro... sec_usuario" />
+                <marker date="1559488059891" expanded="true" signature="1492:1950" ph="UPDATE curso... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/header.php">
+      <file leaf-file-name="updateConsulta.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sql/updateConsulta.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="insertPaciente.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sql/insertPaciente.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="45" column="8" lean-forward="true" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+            <state relative-caret-position="483">
+              <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
               <folding>
-                <marker date="1559443788989" expanded="true" signature="1312:1572" ph="INSERT INTO pacientes... " />
-                <marker date="1559443788989" expanded="true" signature="1312:1573" ph="INSERT INTO pacientes... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="deleteUsuario.php" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/paginas/trabajoWeb/sql/deleteUsuario.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1555838825155" expanded="true" signature="263:374" ph="..." />
-                <marker date="1555838825155" expanded="true" signature="423:467" ph="update usuar... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="validarUsuario.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sql/validarUsuario.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-              <folding>
-                <marker date="1559444927169" expanded="true" signature="170:241" ph="select * fro... sec_usuario" />
-                <marker date="1559444927169" expanded="true" signature="170:247" ph="select * fro... sec_usuario" />
-                <marker date="1559444927169" expanded="true" signature="170:248" ph="select * fro... sec_usuario" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="updateCurso.php" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/paginas/trabajoWeb/sql/updateCurso.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-              <folding>
-                <marker date="1559431072356" expanded="true" signature="731:849" ph="..." />
-                <marker date="1559431072356" expanded="true" signature="908:1417" ph="UPDATE curso... " />
+                <marker date="1559488145218" expanded="true" signature="570:809" ph="UPDATE consu... " />
               </folding>
             </state>
           </provider>
@@ -115,13 +69,20 @@
         <option value="$PROJECT_DIR$/assets/css/main.css" />
         <option value="$PROJECT_DIR$/templateForm.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/login.php" />
-        <option value="$USER_HOME$/Desktop/paginas/trabajoWeb/sql/updateCurso.php" />
-        <option value="$PROJECT_DIR$/crearPaciente.html" />
-        <option value="$PROJECT_DIR$/sql/insertPaciente.php" />
         <option value="$PROJECT_DIR$/header.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/sql/validarUsuario.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/consultas.php" />
+        <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/pacientes.php" />
+        <option value="$PROJECT_DIR$/sql/insertPaciente.php" />
+        <option value="$PROJECT_DIR$/crearPaciente.html" />
+        <option value="$PROJECT_DIR$/sql/deletePaciente.php" />
+        <option value="$USER_HOME$/Desktop/paginas/trabajoWeb/sql/updateCurso.php" />
+        <option value="$PROJECT_DIR$/sql/insertConsulta.php" />
+        <option value="$PROJECT_DIR$/sql/deleteConsulta.php" />
+        <option value="$PROJECT_DIR$/sql/updatePaciente.php" />
+        <option value="$PROJECT_DIR$/sql/updateConsulta.php" />
       </list>
     </option>
   </component>
@@ -132,7 +93,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="240" />
     <option name="y" value="135" />
     <option name="width" value="1440" />
@@ -154,7 +115,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -171,6 +131,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -208,27 +169,27 @@
       <workItem from="1558043700631" duration="13402000" />
       <workItem from="1559412478539" duration="3899000" />
       <workItem from="1559418258655" duration="1917000" />
-      <workItem from="1559422408812" duration="11356000" />
+      <workItem from="1559422408812" duration="11963000" />
+      <workItem from="1559485712849" duration="3649000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45288000" />
+    <option name="totallyTimeSpent" value="49544000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1938" height="1098" extended-state="7" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25349087" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -254,7 +215,71 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1559444927237" expanded="true" signature="287:345" ph="select * fro... sec_usuario" />
+            <marker date="1559486229181" expanded="true" signature="284:342" ph="select * fro... sec_usuario" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/insertPaciente.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="45" column="8" lean-forward="true" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+          <folding>
+            <marker date="1559487012567" expanded="true" signature="1313:1573" ph="INSERT INTO pacientes... " />
+            <marker date="1559487012567" expanded="true" signature="1313:1574" ph="INSERT INTO pacientes... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/paginas/trabajoWeb/sql/deleteUsuario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1555838825155" expanded="true" signature="263:374" ph="..." />
+            <marker date="1555838825155" expanded="true" signature="423:467" ph="update usuar... " />
+            <marker date="1555838825155" expanded="true" signature="555:666" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/validarUsuario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+          <folding>
+            <marker date="1559444927169" expanded="true" signature="170:241" ph="select * fro... sec_usuario" />
+            <marker date="1559444927169" expanded="true" signature="170:247" ph="select * fro... sec_usuario" />
+            <marker date="1559444927169" expanded="true" signature="170:248" ph="select * fro... sec_usuario" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/paginas/trabajoWeb/sql/updateCurso.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding>
+            <marker date="1559487295907" expanded="true" signature="731:849" ph="..." />
+            <marker date="1559487295907" expanded="true" signature="906:1393" ph="UPDATE curso... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1559486229181" expanded="true" signature="284:342" ph="select * fro... sec_usuario" />
           </folding>
         </state>
       </provider>
@@ -298,92 +323,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html" />
-    <entry file="file://$PROJECT_DIR$/pacientes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1218">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consultas.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/paginas/trabajoWeb/sql/insertCurso.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-          <folding>
-            <marker date="1555838825158" expanded="true" signature="1357:1475" ph="..." />
-            <marker date="1555838825158" expanded="true" signature="1532:1791" ph="INSERT INTO curso... " />
-            <marker date="1555838825158" expanded="true" signature="1879:2000" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1344">
-          <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crearPaciente.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="78" column="34" lean-forward="false" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/paginas/trabajoWeb/sql/updateCurso.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-          <folding>
-            <marker date="1559431072356" expanded="true" signature="731:849" ph="..." />
-            <marker date="1559431072356" expanded="true" signature="908:1417" ph="UPDATE curso... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql/insertPaciente.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="45" column="8" lean-forward="true" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
-          <folding>
-            <marker date="1559443788989" expanded="true" signature="1312:1572" ph="INSERT INTO pacientes... " />
-            <marker date="1559443788989" expanded="true" signature="1312:1573" ph="INSERT INTO pacientes... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/paginas/trabajoWeb/sql/deleteUsuario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1555838825155" expanded="true" signature="263:374" ph="..." />
-            <marker date="1555838825155" expanded="true" signature="423:467" ph="update usuar... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql/validarUsuario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-          <folding>
-            <marker date="1559444927169" expanded="true" signature="170:241" ph="select * fro... sec_usuario" />
-            <marker date="1559444927169" expanded="true" signature="170:247" ph="select * fro... sec_usuario" />
-            <marker date="1559444927169" expanded="true" signature="170:248" ph="select * fro... sec_usuario" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -395,12 +338,140 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consultas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-525">
+          <caret line="29" column="42" lean-forward="false" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pacientes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="55" column="46" lean-forward="true" selection-start-line="55" selection-start-column="46" selection-end-line="55" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="43" lean-forward="true" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+        <state relative-caret-position="252">
+          <caret line="12" column="40" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="40" />
           <folding>
-            <marker date="1559444927237" expanded="true" signature="287:345" ph="select * fro... sec_usuario" />
+            <marker date="1559486229181" expanded="true" signature="284:342" ph="select * fro... sec_usuario" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crearPaciente.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/validarUsuario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <marker date="1559444927169" expanded="true" signature="170:241" ph="select * fro... sec_usuario" />
+            <marker date="1559444927169" expanded="true" signature="170:247" ph="select * fro... sec_usuario" />
+            <marker date="1559444927169" expanded="true" signature="170:248" ph="select * fro... sec_usuario" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/paginas/trabajoWeb/sql/deleteUsuario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <marker date="1555838825155" expanded="true" signature="263:374" ph="..." />
+            <marker date="1555838825155" expanded="true" signature="423:467" ph="update usuar... " />
+            <marker date="1555838825155" expanded="true" signature="555:666" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/paginas/trabajoWeb/sql/updateCurso.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding>
+            <marker date="1559487295907" expanded="true" signature="731:849" ph="..." />
+            <marker date="1559487295907" expanded="true" signature="906:1393" ph="UPDATE curso... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/insertPaciente.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-924">
+          <caret line="4" column="22" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+          <folding>
+            <marker date="1559487012567" expanded="true" signature="1313:1573" ph="INSERT INTO pacientes... " />
+            <marker date="1559487012567" expanded="true" signature="1313:1574" ph="INSERT INTO pacientes... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/insertConsulta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="22" column="160" lean-forward="false" selection-start-line="22" selection-start-column="160" selection-end-line="22" selection-end-column="160" />
+          <folding>
+            <marker date="1559487888920" expanded="true" signature="584:753" ph="INSERT INTO consultas... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/deletePaciente.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <marker date="1559487171305" expanded="true" signature="332:378" ph="update pacie... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/deleteConsulta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+          <folding>
+            <marker date="1559488059768" expanded="true" signature="332:378" ph="update consu... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/updatePaciente.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="64" column="32" lean-forward="false" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
+          <folding>
+            <marker date="1559488059891" expanded="true" signature="1492:1950" ph="UPDATE curso... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/updateConsulta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <marker date="1559488145218" expanded="true" signature="570:809" ph="UPDATE consu... " />
           </folding>
         </state>
       </provider>

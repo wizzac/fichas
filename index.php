@@ -8,9 +8,6 @@ session_start();
 include("header.php");
 
 
-
-
-
 	if (isset($_COOKIE['logged'])) {
         if($_COOKIE['logged']==true){
             $usuario=$_COOKIE['usuarioId'];
@@ -19,7 +16,6 @@ include("header.php");
             $resultado=$mysqli->query($sql);
             foreach($resultado as $registro){
                 header("Location:./login.php");
-
             }
         }
 

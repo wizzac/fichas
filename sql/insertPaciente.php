@@ -1,4 +1,7 @@
 <?php
+include("../header.php");
+
+
 if (isset($_POST['submit'])) {
     $nombre = $_POST['nombre'];
     $apellido = $_POST['apellido'];
@@ -50,9 +53,9 @@ if (isset($_POST['submit'])) {
         $location = $_POST['location'];
     }
 
-    $usuario=$_COOKIE['userId'];
+    $usuario=$_COOKIE['usuarioId'];
 
-    $mysqli = new mysqli($GLOBALS['ip'], $GLOBALS['user'], $GLOBALS['pass'], $GLOBALS['base']);
+    $mysqli = new mysqli($ip, $userBase, $passBase, $nombreBase);
     if ($mysqli->connect_errno) {
         echo '<script>alert("Lo sentimos, este sitio web est&aacute; experimentando problemas.")</script>';
         exit;
