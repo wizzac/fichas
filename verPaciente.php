@@ -72,9 +72,8 @@ if(isset($_POST['id'])){
         <div class="box">
             <div class="content container">
                 <div class="row">
-                    <img style="max-height: 200px;max-width: 200px" src="./perfiles/<?php  echo($registro['foto'])?>"/>
+                    <img style="" src="./perfiles/img1.jpg"/>
                 </div>
-
                 <div class="row">
                     <div class="col-md-6">
                         <label>Nombre:</label>

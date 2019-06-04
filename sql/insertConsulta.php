@@ -7,6 +7,7 @@ if (isset($_POST['submit'])) {
     $nota = $_POST['nota'];
     $tipo_consulta=$_POST['tipo_consulta'];
     $fecha_consulta=$_POST['fecha_consulta'];
+    $date = date('Y-m-d H:i:s');
 
     if (isset($_POST['location'])){
         $location = $_POST['location'];
@@ -20,7 +21,7 @@ if (isset($_POST['submit'])) {
         exit;
     }
 
-    $sql = "INSERT INTO consultas(paciente_id,nota,tipo_consulta,fecha_consulta,usuario_id,creado) VALUES ('$paciente','$nota','$tipo_consulta','$fecha_consulta','$usuario','NOW()');";
+    $sql = "INSERT INTO consultas(paciente_id,nota,tipo_consulta,fecha_consulta,usuario_id,creado) VALUES ('$paciente','$nota','$tipo_consulta','$fecha_consulta','$usuario','$date');";
 
     if (!$resultado = $mysqli->query($sql)) {
         echo '<script>alert("Lo sentimos, este sitio web est&aacute; experimentando re problemas.")</script>';
@@ -36,6 +37,5 @@ if (isset($_POST['submit'])) {
 
     }
 }
-
 
 ?>

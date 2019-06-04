@@ -70,7 +70,7 @@ if(isset($_POST['id'])){
     <div class="inner">
         <div class="box">
             <div class="content container">
-                <form action="./sql/updateConsulta.php" method="post" enctype="multipart/form-data">
+                <form action="./sql/updatePaciente.php" method="post" enctype="multipart/form-data">
                     <div class="row">
                         <input type="file" name="foto" value="./perfiles/<?php  echo($registro['foto'])?>">
                     </div>

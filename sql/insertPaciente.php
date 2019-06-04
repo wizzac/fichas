@@ -54,7 +54,7 @@ if (isset($_POST['submit'])) {
     }
 
     $usuario=$_COOKIE['usuarioId'];
-
+$date=$date = date('Y-m-d H:i:s');
 
     if(isset($_FILES['foto'])){
         $foto=basename($_FILES["foto"]["name"]);
@@ -91,7 +91,7 @@ if (isset($_POST['submit'])) {
     }
 
 
-    $sql = "INSERT INTO pacientes(nombre,apellido,fecha_nac,foto,dni,referencia,direccion,notas,telefono,telefono2,usuario_id,creado) VALUES ('$nombre','$apellido','$fecha_nac','$foto','$dni','$referencia','$direccion','$notas','$telefono','$telefono2','$usuario','NOW()');";
+    $sql = "INSERT INTO pacientes(nombre,apellido,fecha_nac,foto,dni,referencia,direccion,notas,telefono,telefono2,usuario_id,creado) VALUES ('$nombre','$apellido','$fecha_nac','$foto','$dni','$referencia','$direccion','$notas','$telefono','$telefono2','$usuario','$date');";
 
     if (!$resultado = $mysqli->query($sql)) {
         echo '<script>alert("Lo sentimos, este sitio web est&aacute; experimentando re problemas.")</script>';

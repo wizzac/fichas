@@ -14,20 +14,18 @@ if (isset($_POST['submit'])) {
         $location = $_POST['location'];
     }
     $mysqli = new mysqli($ip, $userBase, $passBase, $nombreBase);
-
     if ($mysqli->connect_errno) {
         echo '<script>alert("Lo sentimos, este sitio web est&aacute; experimentando problemas.")</script>';
         exit;
     }
 
 
-    $sql = "UPDATE consultas SET VALUES
+    $sql = "UPDATE consultas SET
                     paciente_id= $paciente_id,
                     fecha_consulta=$fecha_consulta,
                     tipo_consulta=$tipo_consulta,
-                    nota = $nota)
+                    nota = $nota
                  WHERE id = $id";
-
     if (!$resultado = $mysqli->query($sql)) {
         echo '<script>alert("Lo sentimos, este sitio web est&aacute; experimentando problemas.")</script>';
         $mysqli->close();

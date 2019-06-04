@@ -17,7 +17,7 @@ include("header.php");
         cursor: pointer;
     }
 </style>
-<body>
+<body style="background-color: #1a1a1a" >
 
 <!-- Header -->
 <header id="header" class="alt">
@@ -37,7 +37,7 @@ include("header.php");
 <section id="One" class="wrapper style3">
     <div class="inner">
         <header class="align-center">
-            <h2>Pacientes</h2>
+            <h2>Consultas</h2>
         </header>
     </div>
 </section>
@@ -48,8 +48,12 @@ include("header.php");
         <div class="box">
             <div class="content">
                 <header class="align-center">
-                    <p class="tit-color">Lista de pacientes</p>
+                    <p class="tit-color">Lista de Consultas</p>
                 </header>
+                <div class="row">
+                    <a href="./crearConsultas.php" class="button btn ">Crear nueva consulta</a>
+                    <br>
+                </div>
                 <br>
                 <table>
                     <thead>
@@ -67,17 +71,17 @@ include("header.php");
                     $resultado=$mysqli->query($sql);
                     foreach($resultado as $registro){
                         echo "<tr>
-                                <form id='form_ver$registro[id]' method='post' action='verPaciente.php'>
+                                <form id='form_ver$registro[id]' method='post' action='./verConsultas.php'>
                                    <input type='hidden' name='id' value='$registro[id]' />
 						           <td><a id='link_ver$registro[id]' href='#'>$registro[nombre] $registro[apellido]</a> </td>
 						        </form>
 						        <script>
                                     $('#link_ver$registro[id]').click(function(){
-                                            $('#form_ver$registro[id]').submit();
+                                        $('#form_ver$registro[id]').submit();
                                     });
                                 </script> 
 						        <td>$registro[fecha_nac]</td>
-						          </tr>";
+						     </tr>";
 
                     }
                     ?>
@@ -87,22 +91,21 @@ include("header.php");
             </div>
         </div>
     </div>
-</section>
 
-<!-- Footer -->
-<footer id="footer">
-    <div class="container">
-        <ul class="icons">
-            <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-            <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-            <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-            <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-        </ul>
-    </div>
-    <div class="copyright">
-        &copy; Untitled. All rights reserved.
-    </div>
-</footer>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <ul class="icons">
+                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            &copy; Untitled. All rights reserved.
+        </div>
+    </footer>
 
 
 </body>
